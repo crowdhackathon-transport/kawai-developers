@@ -1,7 +1,7 @@
 function loginvm()
 {
 	var login=this;
-	this.username=ko.obbservable();
+	this.username=ko.observable();
 	this.password=ko.observable();
 	this.message=ko.observable();
 	
@@ -12,7 +12,7 @@ function loginvm()
 	
 	this.login=function()
 	{
-		/*$.post("http://transport-pcmagas.rhcloud.com/index.php/user/login",{username:login.username(),password:login.password()})
+		$.post("http://transport-pcmagas.rhcloud.com/index.php/user/login",{username:login.username(),password:login.password()})
 		.done(function(data)
 		{
 			preprocess(data,function(the_data)
@@ -27,7 +27,7 @@ function loginvm()
 		.always(function(data)
 		{
 			
-		});*/
+		});
 	};
 };
 

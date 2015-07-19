@@ -3,19 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Login</title>
-		<link type="text/javascript" src="./jquery.min.js">
-		<link type="text/javascript" src="./knockout.js">
-		<link type="text/javascript" src="./tools.js">
-		<link type="text/javascript" src="./login.js">
+		<script  src="./jquery.min.js"></script>
+		<script  src="./knockout.min.js"></script>
+		<script  src="./tools.js"></script>
+		<script  src="./login.js"></script>
 	</head>
 	<body>
 		<div data-bind="with:vm">
 			<form data-bind="submit:login">
 				<input type="text" data-bind="value:username" placeholder="username"><br>
 				<input type="password" data-bind="value:password" placeholder="password"><br>
-				<input type="submit">
+				<input type="submit" value="login">
 			</form>
 		</div>
-	</form>
 	</body>
 </html>
