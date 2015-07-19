@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<link type="text/javascript" src="./jquery.min.js">
+		<link type="text/javascript" src="./knockout.js">
+		<link type="text/javascript" src="./tools.js">
+		<link type="text/javascript" src="./login.js">
+	</head>
+	<body>
+		<div data-bind="with:vm">
+			<form data-bind="submit:login">
+				<input type="text" data-bind="value:username" placeholder="username"><br>
+				<input type="password" data-bind="value:password" placeholder="password"><br>
+				<input type="submit">
+			</form>
+		</div>
+	</form>
+	</body>
+</html>
