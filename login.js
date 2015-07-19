@@ -7,7 +7,7 @@ function loginvm()
 	
 	this.canlogin=ko.computed(function()
 	{
-		return !isEmpty(this.username()) && !isEmpty(this.password());
+		return !isEmpty(login.username()) && !isEmpty(login.password());
 	});
 	
 	this.login=function()
