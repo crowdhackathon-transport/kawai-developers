@@ -1,9 +1,9 @@
 function loginvm()
 {
 	var login=this;
-	this.username=ko.observable();
-	this.password=ko.observable();
-	this.message=ko.observable();
+	login.username=ko.observable();
+	login.password=ko.observable();
+	login.message=ko.observable();
 	
 	this.canlogin=ko.computed(function()
 	{
