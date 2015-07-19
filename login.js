@@ -5,14 +5,21 @@ function loginvm()
 	login.password=ko.observable();
 	login.message=ko.observable();
 	
-	login.canlogin=ko.computed(function()
+	/*login.canlogin=ko.computed(function()
 	{
 		return !isEmpty(login.username()) && !isEmpty(login.password());
-	});
+	});*/
 	
 	login.login_=function()
 	{
-		$.post("http://transport-pcmagas.rhcloud.com/index.php/user/login",{username:login.username(),password:login.password()})
+		window.location ="./line.html";
+		/*$.ajax({
+				
+			url:"http://transport-pcmagas.rhcloud.com/index.php/user/login",
+			data:{"username":login.username(),"password":login.password()},
+			dataType: 'json',
+			type:'POST',
+		})
 		.done(function(data)
 		{
 			preprocess(data,function(the_data)
@@ -27,7 +34,7 @@ function loginvm()
 		.always(function(data)
 		{
 			
-		});
+		});*/
 	};
 };
 
