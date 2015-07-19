@@ -312,6 +312,7 @@ function main() {
 		}
 		
 	});
+
 	document.addEventListener("mouseup", function(evt) {
 		delete keystate[evt.keyCode];
 		var mousePos = getMousePos(canvas, evt);
@@ -769,6 +770,8 @@ function makegrid()
    }
     downplace.draw();
    menu.draw();
+
+
    	// draw the net
 	var w = 4;
 	var x = (WIDTH - w)*0.5;
