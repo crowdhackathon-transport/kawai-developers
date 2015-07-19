@@ -9,12 +9,8 @@
 		<script  src="./login.js"></script>
 	</head>
 	<body>
-		<div data-bind="with:vm">
-			<form data-bind="submit:login">
-				<input type="text" data-bind="value:username" placeholder="username"><br>
-				<input type="password" data-bind="value:password" placeholder="password"><br>
-				<input type="submit" value="login">
-			</form>
-		</div>
+		<input type="text" data-bind="value:username" placeholder="username"><br>
+		<input type="password" data-bind="value:password" placeholder="password"><br>
+		<input type="submit" value="login" data-bind="click:login_">
 	</body>
 </html>

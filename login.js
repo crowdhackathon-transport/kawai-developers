@@ -5,12 +5,12 @@ function loginvm()
 	login.password=ko.observable();
 	login.message=ko.observable();
 	
-	this.canlogin=ko.computed(function()
+	login.canlogin=ko.computed(function()
 	{
 		return !isEmpty(login.username()) && !isEmpty(login.password());
 	});
 	
-	this.login=function()
+	login.login_=function()
 	{
 		$.post("http://transport-pcmagas.rhcloud.com/index.php/user/login",{username:login.username(),password:login.password()})
 		.done(function(data)
@@ -34,4 +34,5 @@ function loginvm()
 $(document).ready(function()
 {
 	var vm=new loginvm();
+	ko.applyBindings(vm);
 });
